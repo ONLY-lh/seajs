@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+
+<body>
+	<div class="box"></div>
+    <script src="js/lib/sea.js"></script>
+    <script>
+    seajs.config({
+    	alias: {
+    		'jquery': './lib/jquery.min.js',
+    		'common': './com/common.js'
+    	}
+    });
+    seajs.use(['./js/main.js'], function(main) {
+        main.init();
+    });
+    </script>
+</body>
+
+</html>
